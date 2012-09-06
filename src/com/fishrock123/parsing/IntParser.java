@@ -2,7 +2,7 @@ package com.fishrock123.parsing;
 
 /**
  * @author Dr. David R. Nadeau
- *	Source: http://nadeausoftware.com/articles/2009/08/java_tip_how_parse_integers_quickly
+ * Source: http://nadeausoftware.com/articles/2009/08/java_tip_how_parse_integers_quickly
  */
 public class IntParser {
 
