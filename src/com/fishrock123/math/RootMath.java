@@ -5,6 +5,7 @@ package com.fishrock123.math;
  * - Chris Lomont, for finding the constant 0x5f375a86, which is slightly more accurate than the original, 0x5f3759df.
  * - Unknown, possibly Terje Mathisen, id Software, from Quake III source code.
  * - Gary Tarolli, for SGI Indigo - earliest known use of the original constant.
+ *   Original has been attributed to Greg Walsh & Cleve Moler, but is not certain.
  *
  * Sources:
  * http://en.wikipedia.org/wiki/Fast_inverse_square_root
