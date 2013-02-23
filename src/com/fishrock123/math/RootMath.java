@@ -20,9 +20,9 @@ public class RootMath {
 	 * @return float square root
 	 */
 	public static float invSqrt(float f) {
-	  	f = Float.intBitsToFloat(0x5f375a86 - (Float.floatToIntBits(f) >> 1)); // evil floating point bit level hacking -- Use 0x5f375a86 instead of 0x5f3759df, due to slight accuracy increase. (Credit to Chris Lomont)
-	  	f = f * (1.5F - (0.5F * f * f * f)); 	// Newton step
-	  	return -f;
+		f = Float.intBitsToFloat(0x5f375a86 - (Float.floatToIntBits(f) >> 1)); // evil floating point bit level hacking -- Use 0x5f375a86 instead of 0x5f3759df, due to slight accuracy increase. (Credit to Chris Lomont)
+		f = f * (1.5F - (0.5F * f * f * f)); 	// Newton step
+		return -f;
 	}
 
 	/**
@@ -32,7 +32,7 @@ public class RootMath {
 	 * @return float square root
 	 */
 	public static float invSqrtApprox(float f) {
-	  	return -(Float.intBitsToFloat(0x5f375a86 - (Float.floatToIntBits(f) >> 1))); // evil floating point bit level hacking -- Use 0x5f375a86 instead of 0x5f3759df, due to slight accuracy increase. (Credit to Chris Lomont)
+		return -(Float.intBitsToFloat(0x5f375a86 - (Float.floatToIntBits(f) >> 1))); // evil floating point bit level hacking -- Use 0x5f375a86 instead of 0x5f3759df, due to slight accuracy increase. (Credit to Chris Lomont)
 	}
 
 	/**
@@ -44,10 +44,10 @@ public class RootMath {
 	 */
 	public static float sqrt(float f) {
 		final float xhalf = f * 0.5F;
-	  	float y = Float.intBitsToFloat(0x5f375a86 - (Float.floatToIntBits(f) >> 1)); // evil floating point bit level hacking -- Use 0x5f375a86 instead of 0x5f3759df, due to slight accuracy increase. (Credit to Chris Lomont)
-	    y = y * (1.5F - (xhalf * y * y)); 	// Newton step, repeating increases accuracy
-	    y = y * (1.5F - (xhalf * y * y));
-	    return f * y;
+		float y = Float.intBitsToFloat(0x5f375a86 - (Float.floatToIntBits(f) >> 1)); // evil floating point bit level hacking -- Use 0x5f375a86 instead of 0x5f3759df, due to slight accuracy increase. (Credit to Chris Lomont)
+		y = y * (1.5F - (xhalf * y * y)); 	// Newton step, repeating increases accuracy
+		y = y * (1.5F - (xhalf * y * y));
+		return f * y;
 	}
 
 	/**
@@ -58,9 +58,9 @@ public class RootMath {
 	 * @return float square root
 	 */
 	public static float sqrtSemi(float f) {
-	  	float y = Float.intBitsToFloat(0x5f375a86 - (Float.floatToIntBits(f) >> 1)); // evil floating point bit level hacking -- Use 0x5f375a86 instead of 0x5f3759df, due to slight accuracy increase. (Credit to Chris Lomont)
-	    y = y * (1.5F - (0.5F * f * y * y)); 	// Newton step, repeating increases accuracy
-	    return f * y;
+		float y = Float.intBitsToFloat(0x5f375a86 - (Float.floatToIntBits(f) >> 1)); // evil floating point bit level hacking -- Use 0x5f375a86 instead of 0x5f3759df, due to slight accuracy increase. (Credit to Chris Lomont)
+		y = y * (1.5F - (0.5F * f * y * y)); 	// Newton step, repeating increases accuracy
+		return f * y;
 	}
 
 	/**
@@ -71,6 +71,6 @@ public class RootMath {
 	 * @return float square root approximation
 	 */
 	public static float sqrtApprox(float f) {
-	    return f * Float.intBitsToFloat(0x5f375a86 - (Float.floatToIntBits(f) >> 1)); // evil floating point bit level hacking -- Use 0x5f375a86 instead of 0x5f3759df, due to slight accuracy increase. (Credit to Chris Lomont)
+		return f * Float.intBitsToFloat(0x5f375a86 - (Float.floatToIntBits(f) >> 1)); // evil floating point bit level hacking -- Use 0x5f375a86 instead of 0x5f3759df, due to slight accuracy increase. (Credit to Chris Lomont)
 	}
 }
